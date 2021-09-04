@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
-console.log("Welcome to the Brain Games!");
-export const name = readlineSync.question('Your answer: ');
- 
+
+console.log('Welcome to the Brain Games!');
+const name = readlineSync.question('Your answer: ');
+export default name;
