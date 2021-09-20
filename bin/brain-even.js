@@ -3,3 +3,4 @@ import name from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
 console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
+console.log(`Answer "yes" if the number is even, otherwise answer "no12334".`);
