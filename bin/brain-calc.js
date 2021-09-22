@@ -4,7 +4,7 @@ import name from '../src/cli.js';
 
 console.log(`What is the result of the expression?`);
 const randomSwitch = () => Math.floor(Math.random() * 3 + 1);
-const mathRandom = () => Math.floor((Math.random() * 100) + 1);
+const mathRandom = () => Math.floor((Math.random() * 50) + 1);
 const calc = () => {
   for (let i = 0; i < 3; i += 1) {
     const num1 = mathRandom();

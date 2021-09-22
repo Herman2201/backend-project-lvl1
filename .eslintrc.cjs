@@ -16,5 +16,6 @@ module.exports = {
     "quotes":0,
     "no-confusing-arrow":0,
     "no-unused-vars":0,
+    "eqeqeq":0,
   },
 };
