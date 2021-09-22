@@ -2,7 +2,6 @@
 import readlineSync from 'readline-sync';
 import name from '../src/cli.js';
 
-<<<<<<< HEAD
 console.log(`Answer 'yes' if the number is even, otherwise answer 'no'.`);
 const evenNumber = (a) => a % 2 === 0 ? 1 : 0;
 const mathRandom = () => Math.floor((Math.random() * 100) + 1);
