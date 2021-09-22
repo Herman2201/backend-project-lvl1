@@ -5,7 +5,7 @@ import name from '../src/cli.js';
 console.log(`Answer 'yes' if the number is even, otherwise answer 'no'.`);
 const evenNumber = (a) => a % 2 === 0 ? 1 : 0;
 const mathRandom = () => Math.floor((Math.random() * 100) + 1);
-const ded = () => {
+const even = () => {
   for (let i = 0; i < 3; i += 1) {
     const a = mathRandom();
     console.log(`Question: ${a}`);
@@ -30,4 +30,4 @@ const ded = () => {
   console.log(`Congratulations, ${name}`);
   return 0;
 };
-ded();
+even();
