@@ -31,7 +31,3 @@ const ded = () => {
   return 0;
 };
 ded();
-=======
-console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
-console.log(`Answer "yes" if the number is even, otherwise answer "no12334".`);
->>>>>>> main
