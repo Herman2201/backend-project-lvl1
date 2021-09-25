@@ -81,19 +81,19 @@ const even = () => {
 /*                                        BRAIN--GCD                                              */
 const gcd = () => {
   for (let i = 0; i < 3; i += 1) {
-    let num1 = randomNum(1, 50);
-    let num2 = randomNum(1, 50);
+    let operand1 = randomNum(1, 50);
+    let operand2 = randomNum(1, 50);
     let result = 0;
-    console.log(`Question: ${num1} ${num2}`);
+    console.log(`Question: ${operand1} ${operand2}`);
     const ansver = readlineSync.question('Your answer: ');
-    while (num1 !== num2) {
-      if (num1 > num2) {
-        num1 -= num2;
+    while (operand1 !== operand2) {
+      if (operand1 > operand2) {
+        operand1 -= operand2;
       } else {
-        num2 -= num1;
+        operand2 -= operand1;
       }
     }
-    result = num1;
+    result = operand1;
     if (ansver == result) {
       console.log('Correct!');
     } else {
@@ -109,14 +109,14 @@ const gcd = () => {
 const progression = () => {
   for (let k = 1; k <= 3; k += 1) {
     let numRand = randomNum(3, 50);
-    const numProgres = randomNum(1, 8);
+    const lengthProgression = randomNum(1, 8);
     const sizeArr = randomNum(5, 10);
     const numExclusion = randomNum(0, sizeArr - 1);
     let result = 0;
     const arr = [];
     for (let i = 0; i < sizeArr; i += 1) {
       arr[i] = numRand;
-      numRand += numProgres;
+      numRand += lengthProgression;
     }
     result = arr[numExclusion];
     arr[numExclusion] = '..';
