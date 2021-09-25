@@ -3,4 +3,4 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![run-tests](https://github.com/afiskon/go-rest-service-example/workflows/run-tests/badge.svg)
 
-[![asciicast](https://asciinema.org/a/GjNm4PXGl6LyTsivTjRoLZW37.svg)](https://asciinema.org/a/GjNm4PXGl6LyTsivTjRoLZW37)
+<a href="https://asciinema.org/a/GjNm4PXGl6LyTsivTjRoLZW37" target="_blank"><img src="https://asciinema.org/a/GjNm4PXGl6LyTsivTjRoLZW37.svg" /></a>
