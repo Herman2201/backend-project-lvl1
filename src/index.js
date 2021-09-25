@@ -134,26 +134,26 @@ const progression = () => {
 };
 
 const prime = () => {
-  for(let k = 1; k <= 3; k += 1) {
-  const ranNum = randomNum(2, 3571);
-  console.log(`Question: ${ranNum}`);
-  const ansver = readlineSync.question('Your answer: ');
-  if (primeNumber(ranNum) === 1) {
-    if (ansver === 'yes') {
-      console.log('Correct!');
-    } else {
-      console.log(`${ansver} is wrong answer ;(. Correct answer was 'yes'.`);
-      return console.log(`Let's try again, ${name}`);
+  for (let k = 1; k <= 3; k += 1) {
+    const ranNum = randomNum(2, 3571);
+    console.log(`Question: ${ranNum}`);
+    const ansver = readlineSync.question('Your answer: ');
+    if (primeNumber(ranNum) === 1) {
+      if (ansver === 'yes') {
+        console.log('Correct!');
+      } else {
+        console.log(`${ansver} is wrong answer ;(. Correct answer was 'yes'.`);
+        return console.log(`Let's try again, ${name}`);
+      }
     }
-  }
-  if (primeNumber(ranNum) === 0) {
-    if (ansver === 'no') {
-      console.log('Correct!');
-    } else {
-      console.log(`${ansver} is wrong answer ;(. Correct answer was 'no'.`);
-      return console.log(`Let's try again, ${name}`);
+    if (primeNumber(ranNum) === 0) {
+      if (ansver === 'no') {
+        console.log('Correct!');
+      } else {
+        console.log(`${ansver} is wrong answer ;(. Correct answer was 'no'.`);
+        return console.log(`Let's try again, ${name}`);
+      }
     }
-  }
   }
   console.log(`Congratulations, ${name}`);
   return 0;
