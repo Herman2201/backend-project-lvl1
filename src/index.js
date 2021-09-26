@@ -2,9 +2,9 @@ import readlineSync from 'readline-sync';
 import name from './cli.js';
 /*                                FUNCTION RANDOM AND EVEN NUMBER AND SQRT                        */
 const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const evenNumber = (a) => a % 2 === 0 ? 1 : 0;
+const isEven = (a) => a % 2 === 0 ? 1 : 0;
 const mathNumber = (num) => Math.floor(Math.sqrt(num));
-const primeNumber = (num) => {
+const isPrime = (num) => {
   const c = mathNumber(num);
   for (let i = 2; i <= c; i += 1) {
     if (num % i === 0) {
@@ -57,7 +57,7 @@ const even = () => {
     const ranNum = randomNum(1, 100);
     console.log(`Question: ${ranNum}`);
     const ansver = readlineSync.question('Your answer: ');
-    if (evenNumber(ranNum) === 1) {
+    if (isEven(ranNum) === 1) {
       if (ansver === 'yes') {
         console.log('Correct!');
       } else {
@@ -65,7 +65,7 @@ const even = () => {
         return console.log(`Let's try again, ${name}`);
       }
     }
-    if (evenNumber(ranNum) === 0) {
+    if (isEven(ranNum) === 0) {
       if (ansver === 'no') {
         console.log('Correct!');
       } else {
@@ -138,7 +138,7 @@ const prime = () => {
     const ranNum = randomNum(2, 3571);
     console.log(`Question: ${ranNum}`);
     const ansver = readlineSync.question('Your answer: ');
-    if (primeNumber(ranNum) === 1) {
+    if (isPrime(ranNum) === 1) {
       if (ansver === 'yes') {
         console.log('Correct!');
       } else {
@@ -146,7 +146,7 @@ const prime = () => {
         return console.log(`Let's try again, ${name}`);
       }
     }
-    if (primeNumber(ranNum) === 0) {
+    if (isPrime(ranNum) === 0) {
       if (ansver === 'no') {
         console.log('Correct!');
       } else {
