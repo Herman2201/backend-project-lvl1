@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import { prime } from '../src/index.js';
+import gamePrime from '../src/games/prime.js';
 
-console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
-
-prime();
+gamePrime();

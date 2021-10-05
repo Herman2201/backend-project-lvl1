@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import { calc } from '../src/index.js';
+import gameCalc from '../src/games/calc.js';
 
-console.log(`What is the result of the expression?`);
-
-calc();
+gameCalc();
