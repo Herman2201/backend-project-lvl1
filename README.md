@@ -76,7 +76,6 @@
 В этой игре нужно написать найбольшее общее кратное двух чисел, числа берутся рандомно.
 
 [![asciicast](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5.svg)](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5)
-
 ---
 
 ### <center>Демонстрация brain-prime</center>
