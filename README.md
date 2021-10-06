@@ -52,7 +52,6 @@
 Тут демострируется приветствие с пользователем. :)
 
 [![asciicast](https://asciinema.org/a/6iIFfNpgB6P9m1WMQt4CX69gS.svg)](https://asciinema.org/a/6iIFfNpgB6P9m1WMQt4CX69gS)
-
 ---
 
 ### <center>Демонстрация игры brain-calc</center>
@@ -60,7 +59,6 @@
 В этой игре нужно будет решить пример, все числа и знак будут рандомными, не ослабляйте бдительность, в игре присутствуют математические знаки "+, -, \\".
 
 [![asciicast](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm.svg)](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm)
-
 ---
 
 ### <center>Демонстрация brain-even</center>
@@ -68,7 +66,6 @@
 В этой игре нужно будет написать четное это число или нет.
 
 [![asciicast](https://asciinema.org/a/ijVtU99TdDhzCTm3afkFlO3VV.svg)](https://asciinema.org/a/ijVtU99TdDhzCTm3afkFlO3VV)
-
 ---
 
 ### <center>Демонстрация brain-gcd</center>
@@ -76,7 +73,6 @@
 В этой игре нужно написать найбольшее общее кратное двух чисел, числа берутся рандомно.
 
 [![asciicast](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5.svg)](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5)
-
 ---
 
 ### <center>Демонстрация brain-prime</center>
@@ -84,7 +80,6 @@
 В этой игре нужно написать натуральное ли число или нет.
 
 [![asciicast](https://asciinema.org/a/4M55YVNtAMTLH9HE2xVGdM14n.svg)](https://asciinema.org/a/4M55YVNtAMTLH9HE2xVGdM14n)
-
 ---
 
 ### <center>Демонстрация brain-progression</center>
@@ -92,7 +87,6 @@
 В этой игре нужно продолжить геометрическую прогрессию, числа, длиина, сама прогрессия рандомные.
 
 [![asciicast](https://asciinema.org/a/hGNagvEOikqdUKSF54Nrkuv9Z.svg)](https://asciinema.org/a/hGNagvEOikqdUKSF54Nrkuv9Z)
-
 ---
 
 ### <center>Демонстрация ошибки</center>
