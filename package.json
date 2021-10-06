@@ -1,21 +1,21 @@
 {
-  "name": "ananimus",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "[![Actions Status](https://github.com/Herman2201/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Herman2201/backend-project-lvl1/actions) <a href=\"https://codeclimate.com/github/Herman2201/backend-project-lvl1/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/9304fa62804d89727877/maintainability\" /></a> ![run-tests](https://github.com/afiskon/go-rest-service-example/workflows/run-tests/badge.svg)",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "bin/brain-gcd": "bin/brain-gcd.js",
-    "bin/brain-progression": "bin/brain-progression.js",
-    "bin/brain-prime": "bin/brain-prime.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Ushkalo Herman",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
@@ -24,5 +24,13 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Herman2201/backend-project-lvl1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Herman2201/backend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Herman2201/backend-project-lvl1#readme"
 }
