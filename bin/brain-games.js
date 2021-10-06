@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import name from '../src/cli.js';
+import gameBrain from '../src/cli.js';
+
+gameBrain();
