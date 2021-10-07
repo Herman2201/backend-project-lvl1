@@ -11,7 +11,7 @@ const logicGames = (playGame, rulesGame) => {
       console.log('Correct!');
       userPoint += 1;
     } else {
-      return console.log(`${ansver} is wrong answer ;(. Correct answer was ${answerTest}.\nLet's try again, ${userName}`);
+      return console.log(`${ansver} is wrong answer ;(. Correct answer was ${answerTest}.\nLet's try again, ${userName}!`);
     }
   }
 
