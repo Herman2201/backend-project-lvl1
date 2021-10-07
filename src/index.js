@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const logicGames = (playGame, rulesGame) => {
   const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
-  console.log(`Hello ${userName}!\n${rulesGame}`);
+  console.log(`Hello, ${userName}!\n${rulesGame}`);
   let userPoint = 0;
   while (userPoint < 3) {
     const [answerTest, questionTest] = playGame();
