@@ -1,7 +1,7 @@
 import logicGames from '../index.js';
 import { randomNum } from '../mathOperation.js';
 
-const ruleGame = `What number is missing in the progression?`;
+const ruleGame = 'What number is missing in the progression?';
 const playGame = () => {
   let numRand = randomNum(3, 50);
   const lengthProgression = randomNum(1, 8);
@@ -16,6 +16,7 @@ const playGame = () => {
   result = arr[numExclusion];
   arr[numExclusion] = '..';
   const question = `${arr.join(' ')}`;
+  result = String(result);
   return [result, question];
 };
 

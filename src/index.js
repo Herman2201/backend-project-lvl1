@@ -7,7 +7,7 @@ const logicGames = (playGame, rulesGame) => {
   while (userPoint < 3) {
     const [answerTest, questionTest] = playGame();
     const ansver = readlineSync.question(`Question: ${questionTest}\nYour answer: `);
-    if (answerTest == ansver) {
+    if (answerTest === ansver) {
       console.log('Correct!');
       userPoint += 1;
     } else {

@@ -1,9 +1,8 @@
-import { question } from 'readline-sync';
 import logicGames from '../index.js';
 import { isPrime } from '../isStupidity.js';
 import { randomNum } from '../mathOperation.js';
 
-const ruleGames = `Answer "yes" if given number is prime. Otherwise answer "no".`;
+const ruleGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const playGame = () => {
   const ranNum = randomNum(2, 3571);
   let result = '';
