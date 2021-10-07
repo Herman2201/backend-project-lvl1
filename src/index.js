@@ -14,8 +14,8 @@ const logicGames = (playGame, rulesGame) => {
       return console.log(`${ansver} is wrong answer ;(. Correct answer was ${answerTest}.\nLet's try again, ${userName}`);
     }
   }
-  
-  return console.log(`Congratulations, ${userName}`);
+
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export default logicGames;
