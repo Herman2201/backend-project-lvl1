@@ -6,7 +6,7 @@ const ruleGames = `Answer 'yes' if the number is even, otherwise answer 'no'.`;
 const playGame = () => {
   let result = '';
   const randNum = randomNum(1, 100);
-  const question = `${randNum}`;
+  const question = randNum;
   if (isEven(randNum) === 1) {
     result = 'yes';
     return [result, question];
