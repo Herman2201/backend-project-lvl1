@@ -1,23 +1,28 @@
 import logicGames from '../index.js';
-import { randomNum } from '../mathOperation.js';
+import randomNumber from '../mathOperation.js';
 
-const ruleGame = `What number is missing in the progression?`;
-const playGame = () => {
-  let numRand = randomNum(3, 50);
-  const lengthProgression = randomNum(1, 8);
-  const sizeArr = randomNum(5, 10);
-  const numExclusion = randomNum(0, sizeArr - 1);
-  let result = 0;
-  const arr = [];
+const nameOfGames = 'What number is missing in the progression?';
+
+const generationRandomArr = (sizeArr, lengthProgression, randomValue) => {
+  const generationArr = [];
+  let increasingValue = randomValue;
   for (let i = 0; i < sizeArr; i += 1) {
-    arr[i] = numRand;
-    numRand += lengthProgression;
+    generationArr[i] = increasingValue;
+    increasingValue += lengthProgression;
   }
-  result = arr[numExclusion];
-  arr[numExclusion] = '..';
-  const question = `${arr.join(' ')}`;
-  return [result, question];
+  return generationArr;
+};
+const playOfGame = () => {
+  const randomValue = randomNumber(3, 50);
+  const lengthProgression = randomNumber(1, 8);
+  const sizeArr = randomNumber(5, 10);
+  const numberExclusion = randomNumber(0, sizeArr - 1);
+  const randomArr = generationRandomArr(sizeArr, lengthProgression, randomValue);
+  const gameResult = randomArr[numberExclusion];
+  randomArr[numberExclusion] = '..';
+  const gameQuestion = `${randomArr.join(' ')}`;
+  return [String(gameResult), gameQuestion];
 };
 
-const gameProgression = () => logicGames(playGame, ruleGame);
+const gameProgression = () => logicGames(playOfGame, nameOfGames);
 export default gameProgression;

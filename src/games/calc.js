@@ -1,32 +1,35 @@
 import logicGames from '../index.js';
-import { randomNum } from '../mathOperation.js';
+import randomNumber from '../mathOperation.js';
 
-const ruleGame = `What is the result of the expression?`;
-const playGame = () => {
-  const operand1 = randomNum(1, 50);
-  const operand2 = randomNum(1, 50);
-  const operator = randomNum(1, 3);
-  let result = 0;
-  let question = '';
-  switch (operator) {
-    case 1:
-      result = operand1 + operand2;
-      question = (`${operand1} + ${operand2}`);
+const nameOfGames = 'What is the result of the expression?';
+
+const rundomArithmeticExample = (randomOperator, rumdomOperand1, rumdomOperand2) => {
+  let arithmeticResult = 0;
+  switch (randomOperator) {
+    case '+':
+      arithmeticResult = rumdomOperand1 + rumdomOperand2;
       break;
 
-    case 2:
-      result = operand1 - operand2;
-      question = (`${operand1} - ${operand2}`);
+    case '-':
+      arithmeticResult = rumdomOperand1 - rumdomOperand2;
       break;
 
-    case 3:
-      result = operand1 * operand2;
-      question = (`${operand1} * ${operand2}`);
+    case '*':
+      arithmeticResult = rumdomOperand1 * rumdomOperand2;
       break;
     default:
   }
-  return [result, question];
+  return String(arithmeticResult);
 };
 
-const gameCalc = () => logicGames(playGame, ruleGame);
+const playOfGame = () => {
+  const rumdomOperand1 = randomNumber(1, 50);
+  const rumdomOperand2 = randomNumber(1, 50);
+  const arrMathOperators = ['+', '-', '*'];
+  const randomOperator = arrMathOperators[randomNumber(0, 2)];
+  const gameResult = rundomArithmeticExample(randomOperator, rumdomOperand1, rumdomOperand2);
+  const gameQuation = `${rumdomOperand1} ${randomOperator} ${rumdomOperand2}`;
+  return [gameResult, gameQuation];
+};
+const gameCalc = () => logicGames(playOfGame, nameOfGames);
 export default gameCalc;
