@@ -1,24 +1,27 @@
 import logicGames from '../index.js';
-import { randomNum } from '../mathOperation.js';
+import randomNumber from '../mathOperation.js';
 
-const ruleGames = 'Find the greatest common divisor of given numbers.';
-const playGame = () => {
-  let operand1 = randomNum(1, 50);
-  let operand2 = randomNum(1, 50);
-  let result = 0;
-  const quation = `${operand1} ${operand2}`;
-  while (operand1 !== operand2) {
-    if (operand1 > operand2) {
-      operand1 -= operand2;
+const greatestMultiple = (randomOperand1, randomOperand2) => {
+  let replacementOperand1 = randomOperand1;
+  let replacementOperand2 = randomOperand2;
+  while (replacementOperand1 !== replacementOperand2) {
+    if (replacementOperand1 > replacementOperand2) {
+      replacementOperand1 -= replacementOperand2;
     } else {
-      operand2 -= operand1;
+      replacementOperand2 -= replacementOperand1;
     }
   }
-  result = operand1;
-  result = String(result);
-  return [result, quation];
+  return String(replacementOperand1);
+};
+const nameOfGames = 'Find the greatest common divisor of given numbers.';
+const playOfGame = () => {
+  const randomOperand1 = randomNumber(1, 50);
+  const randomOperand2 = randomNumber(1, 50);
+  const gameQuation = `${randomOperand1} ${randomOperand2}`;
+  const gameResult = greatestMultiple(randomOperand1, randomOperand2);
+  return [gameResult, gameQuation];
 };
 
-const gamesGcd = () => logicGames(playGame, ruleGames);
+const gamesGcd = () => logicGames(playOfGame, nameOfGames);
 
 export default gamesGcd;

@@ -1,19 +1,23 @@
 import logicGames from '../index.js';
-import { isPrime } from '../isStupidity.js';
-import { randomNum } from '../mathOperation.js';
+import randomNumber from '../mathOperation.js';
 
-const ruleGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const playGame = () => {
-  const ranNum = randomNum(2, 3571);
-  let result = '';
-  const question = `${ranNum}`;
-  if (isPrime(ranNum) === 1) {
-    result = 'yes';
-    return [result, question];
+const nameOfGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isPrime = (calculatedValue) => {
+  const squareNumber = Math.sqrt(calculatedValue);
+  for (let i = 2; i <= squareNumber; i += 1) {
+    if (calculatedValue % i === 0) {
+      return 0;
+    }
   }
-  result = 'no';
-  return [result, question];
+  return 1;
 };
 
-const gamePrime = () => logicGames(playGame, ruleGames);
+const playOfGame = () => {
+  const randomValue = randomNumber(2, 3571);
+  const gameQuestion = `${randomValue}`;
+  return [isPrime(randomValue) === 1 ? 'yes' : 'no', gameQuestion];
+};
+
+const gamePrime = () => logicGames(playOfGame, nameOfGames);
 export default gamePrime;

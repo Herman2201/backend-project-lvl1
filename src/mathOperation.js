@@ -1,7 +1,3 @@
-const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const sqrtMath = (num) => Math.floor(Math.sqrt(num));
+const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export {
-  randomNum,
-  sqrtMath,
-};
+export default randomNumber;
