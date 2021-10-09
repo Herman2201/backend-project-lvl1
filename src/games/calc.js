@@ -9,7 +9,7 @@ const rundomArithmeticExample = (randomOperator, rumdomOperand1, rumdomOperand2)
       return rumdomOperand1 + rumdomOperand2;
 
     case '-':
-      return rumdomOperand1 - rumdomOperand2;     
+      return rumdomOperand1 - rumdomOperand2;
 
     default:
       return rumdomOperand1 * rumdomOperand2;
