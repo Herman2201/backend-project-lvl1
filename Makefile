@@ -23,7 +23,6 @@ brain-prime:
 
 publish:
 	npm publish --dry-run
-	npm link
 
 make lint:
 	npx eslint .

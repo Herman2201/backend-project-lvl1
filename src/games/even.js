@@ -1,13 +1,14 @@
 import logicGames from '../index.js';
-import randomNumber from '../mathOperation.js';
-
-const isEven = (a) => (a % 2 === 0 ? 1 : 0);
+import randomNumber from '../utils.js';
 
 const nameOfGames = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (a) => a % 2 === 0 || false;
+
 const playGame = () => {
   const randomValue = randomNumber(1, 100);
   const gameQuestion = randomValue;
-  return [isEven(randomValue) === 1 ? 'yes' : 'no', gameQuestion];
+  return [isEven(randomValue) === true ? 'yes' : 'no', gameQuestion];
 };
 const gamesEven = () => logicGames(playGame, nameOfGames);
 
