@@ -1,5 +1,7 @@
 import logicGames from '../index.js';
-import randomNumber from '../mathOperation.js';
+import randomNumber from '../utils.js';
+
+const nameOfGames = 'Find the greatest common divisor of given numbers.';
 
 const greatestMultiple = (randomOperand1, randomOperand2) => {
   let replacementOperand1 = randomOperand1;
@@ -13,7 +15,7 @@ const greatestMultiple = (randomOperand1, randomOperand2) => {
   }
   return String(replacementOperand1);
 };
-const nameOfGames = 'Find the greatest common divisor of given numbers.';
+
 const playOfGame = () => {
   const randomOperand1 = randomNumber(1, 50);
   const randomOperand2 = randomNumber(1, 50);
