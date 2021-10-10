@@ -8,7 +8,8 @@ const isEven = (a) => a % 2 === 0 || false;
 const playGame = () => {
   const randomValue = randomNumber(1, 100);
   const gameQuestion = randomValue;
-  return [isEven(randomValue) === true ? 'yes' : 'no', gameQuestion];
+  const gameResult = isEven(randomValue) === true ? 'yes' : 'no';
+  return [gameResult, gameQuestion];
 };
 const gamesEven = () => logicGames(playGame, nameOfGames);
 
