@@ -10,7 +10,7 @@ const greatestMultiple = (number1, number2) => {
     const difference = max - min;
     [min, max] = [
       Math.min(difference, min),
-      Math.max(difference, min)
+      Math.max(difference, min),
     ];
   }
   return String(max);
