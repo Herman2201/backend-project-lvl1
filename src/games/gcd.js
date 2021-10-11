@@ -1,29 +1,29 @@
-import logicGames from '../index.js';
+import startPlaying from '../index.js';
 import randomNumber from '../utils.js';
 
 const nameOfGames = 'Find the greatest common divisor of given numbers.';
 
-const greatestMultiple = (randomOperand1, randomOperand2) => {
-  let replacementOperand1 = randomOperand1;
-  let replacementOperand2 = randomOperand2;
-  while (replacementOperand1 !== replacementOperand2) {
-    if (replacementOperand1 > replacementOperand2) {
-      replacementOperand1 -= replacementOperand2;
-    } else {
-      replacementOperand2 -= replacementOperand1;
-    }
+const greatestMultiple = (number1, number2) => {
+  let min = Math.min(number1, number2);
+  let max = Math.max(number1, number2);
+  while (min !== max) {
+    const difference = max - min;
+    [min, max] = [
+      Math.min(difference, min),
+      Math.max(difference, min),
+    ];
   }
-  return String(replacementOperand1);
+  return String(max);
 };
 
 const playOfGame = () => {
-  const randomOperand1 = randomNumber(1, 50);
-  const randomOperand2 = randomNumber(1, 50);
-  const gameQuation = `${randomOperand1} ${randomOperand2}`;
-  const gameResult = greatestMultiple(randomOperand1, randomOperand2);
+  const number1 = randomNumber(1, 50);
+  const number2 = randomNumber(1, 50);
+  const gameQuation = `${number1} ${number2}`;
+  const gameResult = greatestMultiple(number1, number2);
   return [gameResult, gameQuation];
 };
 
-const gamesGcd = () => logicGames(playOfGame, nameOfGames);
+const gamesGcd = () => startPlaying(playOfGame, nameOfGames);
 
 export default gamesGcd;

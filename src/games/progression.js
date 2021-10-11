@@ -1,20 +1,20 @@
-import logicGames from '../index.js';
+import startPlaying from '../index.js';
 import randomNumber from '../utils.js';
 
 const nameOfGames = 'What number is missing in the progression?';
 
 const hidingElement = (generatedArr, numberExclusion) => {
-  const hidingValue = generatedArr;
+  const hidingValue = Array.from(generatedArr);
   hidingValue[numberExclusion] = '..';
   return `${hidingValue.join(' ')}`;
 };
 
 const generationRandomArr = (length, step, first) => {
-  const current = [];
+  const progression = [];
   for (let i = 0; i < length; i += 1) {
-    current.push(first + (step * i));
+    progression.push(first + (step * i));
   }
-  return current;
+  return progression;
 };
 const playOfGame = () => {
   const firstValue = randomNumber(3, 50);
@@ -27,5 +27,5 @@ const playOfGame = () => {
   return [gameResult, gameQuestion];
 };
 
-const gameProgression = () => logicGames(playOfGame, nameOfGames);
+const gameProgression = () => startPlaying(playOfGame, nameOfGames);
 export default gameProgression;
