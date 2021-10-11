@@ -1,4 +1,4 @@
-import logicGames from '../index.js';
+import startPlaying from '../index.js';
 import randomNumber from '../utils.js';
 
 const nameOfGames = 'What is the result of the expression?';
@@ -11,8 +11,11 @@ const rundomArithmeticExample = (randomOperator, rumdomOperand1, rumdomOperand2)
     case '-':
       return rumdomOperand1 - rumdomOperand2;
 
-    default:
+    case '*':
       return rumdomOperand1 * rumdomOperand2;
+
+    default:
+      throw new Error(`This operator ${randomOperator} is not supported`);
   }
 };
 
@@ -25,5 +28,5 @@ const playOfGame = () => {
   const gameQuation = `${rumdomOperand1} ${randomOperator} ${rumdomOperand2}`;
   return [String(gameResult), gameQuation];
 };
-const gameCalc = () => logicGames(playOfGame, nameOfGames);
+const gameCalc = () => startPlaying(playOfGame, nameOfGames);
 export default gameCalc;
