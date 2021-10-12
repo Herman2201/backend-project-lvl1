@@ -3,29 +3,29 @@ import randomNumber from '../utils.js';
 
 const nameOfGames = 'What is the result of the expression?';
 
-const rundomArithmeticExample = (randomOperator, rumdomOperand1, rumdomOperand2) => {
-  switch (randomOperator) {
+const arithmeticExample = (operator, number1, number2) => {
+  switch (operator) {
     case '+':
-      return rumdomOperand1 + rumdomOperand2;
+      return number1 + number2;
 
     case '-':
-      return rumdomOperand1 - rumdomOperand2;
+      return number1 - number2;
 
     case '*':
-      return rumdomOperand1 * rumdomOperand2;
+      return number1 * number2;
 
     default:
-      throw new Error(`This operator ${randomOperator} is not supported`);
+      throw new Error(`This operator ${operator} is not supported`);
   }
 };
 
 const playOfGame = () => {
-  const rumdomOperand1 = randomNumber(1, 50);
-  const rumdomOperand2 = randomNumber(1, 50);
+  const operand1 = randomNumber(1, 50);
+  const operand2 = randomNumber(1, 50);
   const arrMathOperators = ['+', '-', '*'];
-  const randomOperator = arrMathOperators[randomNumber(0, arrMathOperators.length - 1)];
-  const gameResult = rundomArithmeticExample(randomOperator, rumdomOperand1, rumdomOperand2);
-  const gameQuation = `${rumdomOperand1} ${randomOperator} ${rumdomOperand2}`;
+  const operator = arrMathOperators[randomNumber(0, arrMathOperators.length - 1)];
+  const gameResult = arithmeticExample(operator, operand1, operand2);
+  const gameQuation = `${operand1} ${operator} ${operand2}`;
   return [String(gameResult), gameQuation];
 };
 const gameCalc = () => startPlaying(playOfGame, nameOfGames);

@@ -13,7 +13,7 @@ const greatestMultiple = (number1, number2) => {
       Math.max(difference, min),
     ];
   }
-  return String(max);
+  return max;
 };
 
 const playOfGame = () => {
@@ -21,7 +21,7 @@ const playOfGame = () => {
   const number2 = randomNumber(1, 50);
   const gameQuation = `${number1} ${number2}`;
   const gameResult = greatestMultiple(number1, number2);
-  return [gameResult, gameQuation];
+  return [String(gameResult), gameQuation];
 };
 
 const gamesGcd = () => startPlaying(playOfGame, nameOfGames);
