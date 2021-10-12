@@ -3,10 +3,10 @@ import randomNumber from '../utils.js';
 
 const nameOfGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (calculatedValue) => {
-  const squareRoot = Math.sqrt(calculatedValue);
+const isPrime = (number) => {
+  const squareRoot = Math.sqrt(number);
   for (let i = 2; i <= squareRoot; i += 1) {
-    if (calculatedValue % i === 0) {
+    if (number % i === 0) {
       return false;
     }
   }
@@ -14,9 +14,9 @@ const isPrime = (calculatedValue) => {
 };
 
 const playOfGame = () => {
-  const randomValue = randomNumber(2, 3571);
-  const gameQuestion = `${randomValue}`;
-  const gameResult = isPrime(randomValue) ? 'yes' : 'no';
+  const number = randomNumber(2, 3571);
+  const gameQuestion = `${number}`;
+  const gameResult = isPrime(number) ? 'yes' : 'no';
   return [gameResult, gameQuestion];
 };
 
