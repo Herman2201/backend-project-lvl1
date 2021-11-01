@@ -1,5 +1,5 @@
-import startPlaying from '../index.js';
-import randomNumber from '../utils.js';
+import startToPlaying from '../index.js';
+import gerenerateNumber from '../utils.js';
 
 const nameOfGames = 'Find the greatest common divisor of given numbers.';
 
@@ -17,13 +17,13 @@ const greatestMultiple = (number1, number2) => {
 };
 
 const playOfGame = () => {
-  const number1 = randomNumber(1, 50);
-  const number2 = randomNumber(1, 50);
+  const number1 = gerenerateNumber(1, 50);
+  const number2 = gerenerateNumber(1, 50);
   const gameQuation = `${number1} ${number2}`;
   const gameResult = greatestMultiple(number1, number2);
   return [String(gameResult), gameQuation];
 };
 
-const gamesGcd = () => startPlaying(playOfGame, nameOfGames);
+const playGcd = () => startToPlaying(playOfGame, nameOfGames);
 
-export default gamesGcd;
+export default playGcd;

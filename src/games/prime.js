@@ -1,5 +1,5 @@
-import startPlaying from '../index.js';
-import randomNumber from '../utils.js';
+import startToPlaying from '../index.js';
+import gerenerateNumber from '../utils.js';
 
 const nameOfGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -13,12 +13,12 @@ const isPrime = (number) => {
   return true;
 };
 
-const playOfGame = () => {
-  const number = randomNumber(2, 3571);
+function playOfGame() {
+  const number = gerenerateNumber(2, 3571);
   const gameQuestion = `${number}`;
   const gameResult = isPrime(number) ? 'yes' : 'no';
   return [gameResult, gameQuestion];
-};
+}
 
-const gamePrime = () => startPlaying(playOfGame, nameOfGames);
-export default gamePrime;
+const playPrime = () => startToPlaying(playOfGame, nameOfGames);
+export default playPrime;
