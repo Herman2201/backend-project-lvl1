@@ -19,21 +19,21 @@ But first we need to install the game on our computer.
 
 1. The first step is to clone the repository.
     If you have MacOS, first open the terminal - command + space -> terminal and do everything as in the example below. If you have Windows, then first you need to install [git](https://git-scm.com/download/win), then open the console - Win + R -> cmd and do everything as in the example below. If you have Linux, open the terminal - Ctrl+Alt+T and do everything as in the example below. You can choose any place where you want to clone the repository (the main thing to remember is where 😁).
-    Example in[аскинеме](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) or from below:
+    Example in[asciinema](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) or from below:
 
 ```
 > cd Desktop
 > git clone https://github.com/Herman2201/backend-project-lvl1
 ```
- If you don't want to clone, you can download [zip архив](https://github.com/Herman2201/backend-project-lvl1/archive/refs/heads/main.zip) repository and move it wherever you want (the main thing to remember is where 😁).
+ If you don't want to clone, you can download [zip archive](https://github.com/Herman2201/backend-project-lvl1/archive/refs/heads/main.zip) repository and move it wherever you want (the main thing to remember is where 😁).
  ___
 
-2. The second step is to install Node.js on your PC (if you have Windows, I advise you to install this [консоль](https://cmder.net)). To do this, go to the official site [Node.js](https://nodejs.org/en/download/) and download the latest stable version for your OS. Once installed, check if Node.js is installed on your OS using the check version command:
+2. The second step is to install Node.js on your PC (if you have Windows, I advise you to install this [console](https://cmder.net)). To do this, go to the official site [Node.js](https://nodejs.org/en/download/) and download the latest stable version for your OS. Once installed, check if Node.js is installed on your OS using the check version command:
 ```
 > node -v
 ```
 ___
-3. After cloning the repository with the game on your computer, you need to go through the console (terminal) to the game directory and install the dependencies (make install) because without them, after that, publish the game packages locally (make publish) so that you can call the game in any time, after you need to link our game (npm link), so that when new changes come out, everything works. Example in [аскинеме](https://asciinema.org/a/ttve5NxygFXvABe8Vwew1eBMG) or from below:
+3. After cloning the repository with the game on your computer, you need to go through the console (terminal) to the game directory and install the dependencies (make install) because without them, after that, publish the game packages locally (make publish) so that you can call the game in any time, after you need to link our game (npm link), so that when new changes come out, everything works. Example in [asciinema](https://asciinema.org/a/ttve5NxygFXvABe8Vwew1eBMG) or from below:
 
 ```
 > cd /* ваш путь в директорию */
