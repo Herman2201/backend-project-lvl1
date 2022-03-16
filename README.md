@@ -9,7 +9,7 @@ With this game, you can test what you are capable of! :D
 
 But first we need to install the game on our computer.
 
-##### The game supports OS:
+ **The game supports OS:**
 
 - Windows;
 - Linux;
@@ -65,7 +65,7 @@ Here is a greeting with the user. :D
 
 ### <center>Demonstration игры brain-calc</center>
 
- In this game, you will need to solve a mathematical example, all numbers and mathematical operators will be random. Stay vigilant, there are operators in the game"+, -, *". :D
+ In this game, you will need to solve a mathematical example, all numbers and mathematical operators will be random. Stay vigilant, there are operators in the game "+, -, *". :D
 
 [![asciicast](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm.svg)](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm)
 ---
