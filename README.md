@@ -4,46 +4,46 @@
 
 ### <center>Brain-games</center>
 
-Логическое мышление есть у каждого, но развито оно у всех по разному!)
-С помощью этой игры, ты можешь проверить, на что ты способен! :D
+Everyone has logical thinking, but it is developed differently for everyone!)
+With this game, you can test what you are capable of! :D
 
-Но для начала игру нам нужно установить на наш компьютер.
+But first we need to install the game on our computer.
 
-##### Игра поддерживает OС:
+##### The game supports OS:
 
 - Windows;
 - Linux;
 - MacOS.
 
-### <center>Инструкция по установке</center>
+### <center>Installation instructions</center>
 
-1. Первый делом нужно склонировать репозиторий.
-   Если у вас MacOS для начала откройте терминал - command + space -> terminal и сделайте все как в примере с низу. Если у вас Windows то для начала вам нужно установить [git](https://git-scm.com/download/win), после откройте консоль - Win + R -> cmd  и сделайте все как в примере с низу. Если у вас  Linux откройте terminal - Ctrl+Alt+T и сделайте все как в примере с низу. Вы можете выбрать любое место куда хотите склонировать репозиторий (главное запомните куда :)).
-   Пример в [аскинеме](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) или с низу:
+1. The first step is to clone the repository.
+    If you have MacOS, first open the terminal - command + space -> terminal and do everything as in the example below. If you have Windows, then first you need to install [git](https://git-scm.com/download/win), then open the console - Win + R -> cmd and do everything as in the example below. If you have Linux, open the terminal - Ctrl+Alt+T and do everything as in the example below. You can choose any place where you want to clone the repository (the main thing to remember is where 😁).
+    Example in[аскинеме](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) or from below:
 
 ```
 > cd Desktop
 > git clone https://github.com/Herman2201/backend-project-lvl1
 ```
- Если не хотите клонировать, можно скачать [zip архив](https://github.com/Herman2201/backend-project-lvl1/archive/refs/heads/main.zip) репозитория и переместите куда пожелаете (главное запомните куда :).
+ If you don't want to clone, you can download [zip архив](https://github.com/Herman2201/backend-project-lvl1/archive/refs/heads/main.zip) repository and move it wherever you want (the main thing to remember is where 😁).
  ___
 
-2. Вторым делом нужно установить Node.js на ваш пк (если у вас Windows советую установить эту [консоль](https://cmder.net)). Для этого нужно зайди на официальный сайта [Node.js](https://nodejs.org/en/download/) и скачать последнюю стабильную версию для вашей ОС. После установки проверьте установился Node.js на вашу ОС, с помощью команды проверки версии:
+2. The second step is to install Node.js on your PC (if you have Windows, I advise you to install this [консоль](https://cmder.net)). To do this, go to the official site [Node.js](https://nodejs.org/en/download/) and download the latest stable version for your OS. Once installed, check if Node.js is installed on your OS using the check version command:
 ```
 > node -v
 ```
 ___
-3. После такого как склонировали репозиторий с игрой себе на компьютер, нужно зайти через console/rerminal в директорию игры и установить зависимости(make install) ведь без них никуда, после, опубликовать пакеты игры локально(make publish), чтоб можно было вызывать игру в любой момент, после нужно прилинковать нашу игру(npm link), чтоб когда вышли новые изменения, все работало. Пример в [аскинеме](https://asciinema.org/a/ttve5NxygFXvABe8Vwew1eBMG) или с низу:
+3. After cloning the repository with the game on your computer, you need to go through the console (terminal) to the game directory and install the dependencies (make install) because without them, after that, publish the game packages locally (make publish) so that you can call the game in any time, after you need to link our game (npm link), so that when new changes come out, everything works. Example in [аскинеме](https://asciinema.org/a/ttve5NxygFXvABe8Vwew1eBMG) or from below:
 
 ```
 > cd /* ваш путь в директорию */
 > cd backend-project-lvl1
 > make install
 > make publish
-> npm link /* для MacOS sudo npm link */
+> npm link /* for MacOS(Linux) sudo npm link */
 ```
 ___
-4. Ну и на конец можно спокойно играть. :D Ниже пример игр которые можно играть.:) **Но запомни: в каждой игре у тебя есть 3 попытки, одна ошибка и ты програл, постарайся)**
+4. Well, in the end, you can safely play. :D Below is an example of games that can be played.😁 **But remember: in each game you have 3 attempts, one mistake and you fail, try)**
 
 ```
 > brain-games
@@ -56,50 +56,50 @@ ___
 
 ___
 
-### <center>Демонстрация brain-games</center>
+### <center>Demonstration brain-games</center>
 
-Тут демострируется приветствие с пользователем. :)
+Here is a greeting with the user. :D
 
 [![asciicast](https://asciinema.org/a/6iIFfNpgB6P9m1WMQt4CX69gS.svg)](https://asciinema.org/a/6iIFfNpgB6P9m1WMQt4CX69gS)
 ---
 
-### <center>Демонстрация игры brain-calc</center>
+### <center>Demonstration игры brain-calc</center>
 
-В этой игре нужно будет решить математический пример, все числа и математические символы будут рандомными. Не ослабляйте бдительность, в игре присутствуют  символы "+, -, \\".
+ In this game, you will need to solve a mathematical example, all numbers and mathematical operators will be random. Stay vigilant, there are operators in the game"+, -, *". :D
 
 [![asciicast](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm.svg)](https://asciinema.org/a/I7dlL1Sfb5zFN1IrQLtl5Thbm)
 ---
 
-### <center>Демонстрация brain-even</center>
+### <center>Demonstration brain-even</center>
 
-В этой игре нужно будет написать четное это число, или нет.
+In this game, you will need to answer whether this number is even or not. :D
 
 [![asciicast](https://asciinema.org/a/ijVtU99TdDhzCTm3afkFlO3VV.svg)](https://asciinema.org/a/ijVtU99TdDhzCTm3afkFlO3VV)
 ---
 
-### <center>Демонстрация brain-gcd</center>
+### <center>Demonstration brain-gcd</center>
 
-В этой игре нужно написать найбольшее общее кратное двух чисел, числа берутся рандомно.
+In this game, you need to answer the question "What is the greatest common multiple of two numbers", the numbers are taken randomly! :D
 
 [![asciicast](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5.svg)](https://asciinema.org/a/DsseFgOO6tplIkhbjsd0Gg0z5)
 ---
 
-### <center>Демонстрация brain-prime</center>
+### <center>Demonstration brain-prime</center>
 
-В этой игре нужно написать натуральное число, или нет.
+In this game, you need to answer the question "Is this a natural number?", the numbers are taken randomly! :D
 
 [![asciicast](https://asciinema.org/a/4M55YVNtAMTLH9HE2xVGdM14n.svg)](https://asciinema.org/a/4M55YVNtAMTLH9HE2xVGdM14n)
 ---
 
-### <center>Демонстрация brain-progression</center>
+### <center>Demonstration brain-progression</center>
 
-В этой игре нужно продолжить геометрическую прогрессию. Числа, длина, шаг прогрессии рандомные.
+In this game, you need to continue the geometric progression. Numbers, length, step progressing randomly! :D
 
 [![asciicast](https://asciinema.org/a/hGNagvEOikqdUKSF54Nrkuv9Z.svg)](https://asciinema.org/a/hGNagvEOikqdUKSF54Nrkuv9Z)
 ---
 
-### <center>Демонстрация ошибки</center>
+### <center>Demonstration errore</center>
 
-Если ты допустишь одну ошибку, игра сразу будет окончена и придется начинать заново. :,(
+If you make one mistake, the game will immediately be over and you will have to start over. :,(
 
 [![asciicast](https://asciinema.org/a/NrjNAKEXnptibKOIQu4BItpxd.svg)](https://asciinema.org/a/NrjNAKEXnptibKOIQu4BItpxd)

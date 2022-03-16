@@ -24,6 +24,6 @@ const playOfGame = () => {
   return [String(gameResult), gameQuation];
 };
 
-const playGcd = () => startToPlaying(playOfGame, nameOfGames);
+const playGcd = () => startToPlaying(playOfGame(), nameOfGames);
 
 export default playGcd;

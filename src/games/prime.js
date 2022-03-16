@@ -4,7 +4,7 @@ import gerenerateNumber from '../utils.js';
 const nameOfGames = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (num < 2) {
+  if (number < 2) {
     return false;
   }
   const squareRoot = Math.sqrt(number);
@@ -23,5 +23,5 @@ function playOfGame() {
   return [gameResult, gameQuestion];
 }
 
-const playPrime = () => startToPlaying(playOfGame, nameOfGames);
+const playPrime = () => startToPlaying(playOfGame(), nameOfGames);
 export default playPrime;

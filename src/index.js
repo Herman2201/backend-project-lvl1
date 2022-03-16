@@ -7,7 +7,11 @@ const startToPlaying = (playOfGame, rulesGame) => {
   const findOutTheName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${findOutTheName}!`);
   console.log(`${rulesGame}`);
-  for (let attemptCounter = 0; attemptCounter < attemptsToWin;attemptCounter += 1) {
+  for (
+    let attemptCounter = 0;
+    attemptCounter < attemptsToWin;
+    attemptCounter += 1
+  ) {
     const [answerTest, questionTest] = playOfGame();
     console.log(`Question: ${questionTest}`);
     const answer = readlineSync.question('Your answer: ');

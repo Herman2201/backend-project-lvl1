@@ -27,5 +27,5 @@ const playOfGame = () => {
   return [gameResult, gameQuestion];
 };
 
-const playProgression = () => startToPlaying(playOfGame, nameOfGames);
+const playProgression = () => startToPlaying(playOfGame(), nameOfGames);
 export default playProgression;
