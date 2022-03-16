@@ -19,7 +19,7 @@ But first we need to install the game on our computer.
 
 1. The first step is to clone the repository.
     If you have MacOS, first open the terminal - command + space -> terminal and do everything as in the example below. If you have Windows, then first you need to install [git](https://git-scm.com/download/win), then open the console - Win + R -> cmd and do everything as in the example below. If you have Linux, open the terminal - Ctrl+Alt+T and do everything as in the example below. You can choose any place where you want to clone the repository (the main thing to remember is where 😁).
-    Example in[asciinema](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) or from below:
+    Example in [asciinema](https://asciinema.org/a/tPV8kRUiAR0QIKDqh8NSeSy4p) or from below:
 
 ```
 > cd Desktop
