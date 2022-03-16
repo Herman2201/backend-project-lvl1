@@ -36,7 +36,7 @@ ___
 3. After cloning the repository with the game on your computer, you need to go through the console (terminal) to the game directory and install the dependencies (make install) because without them, after that, publish the game packages locally (make publish) so that you can call the game in any time, after you need to link our game (npm link), so that when new changes come out, everything works. Example in [asciinema](https://asciinema.org/a/ttve5NxygFXvABe8Vwew1eBMG) or from below:
 
 ```
-> cd /* ваш путь в директорию */
+> cd /* your directory path */
 > cd backend-project-lvl1
 > make install
 > make publish
