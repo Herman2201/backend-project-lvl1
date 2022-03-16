@@ -11,6 +11,6 @@ const playGame = () => {
   const gameResult = isEven(number) ? 'yes' : 'no';
   return [gameResult, gameQuestion];
 };
-const playEven = () => startToPlaying(playGame, nameOfGames);
+const playEven = () => startToPlaying(playGame(), nameOfGames);
 
 export default playEven;

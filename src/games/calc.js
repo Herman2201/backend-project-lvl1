@@ -22,11 +22,11 @@ const createAnExample = (operator, number1, number2) => {
 const playOfGame = () => {
   const operand1 = gerenerateNumber(1, 50);
   const operand2 = gerenerateNumber(1, 50);
-  const arrOperators = ['+', '-', '*'];
-  const operator = arrOperators[gerenerateNumber(0, arrOperators.length - 1)];
+  const operators = ['+', '-', '*'];
+  const operator = operators[gerenerateNumber(0, operators.length - 1)];
   const gameResult = createAnExample(operator, operand1, operand2);
   const gameQuation = `${operand1} ${operator} ${operand2}`;
   return [String(gameResult), gameQuation];
 };
-const playCalc = () => startToPlaying(playOfGame, nameOfGames);
+const playCalc = () => startToPlaying(playOfGame(), nameOfGames);
 export default playCalc;
